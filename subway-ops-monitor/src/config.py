@@ -10,6 +10,7 @@ class Config:
     
     SUPABASE_URL = os.getenv("SUPABASE_URL")
     SUPABASE_KEY = os.getenv("SUPABASE_KEY")
+    DATABASE_URL = os.getenv("DATABASE_URL")
     
     # 배치 실행 주기 (초) - 기본값 60초
     BATCH_INTERVAL = int(os.getenv("BATCH_INTERVAL", 60))

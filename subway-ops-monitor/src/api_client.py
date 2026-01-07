@@ -1,6 +1,6 @@
 import requests
 import datetime
-from .config import Config
+from config import Config
 
 class SeoulSubwayAPI:
     def __init__(self):

@@ -1,8 +1,8 @@
 import schedule
 import time
-from .config import Config
-from .api_client import SeoulSubwayAPI
-from .db_client import DbClient
+from config import Config
+from api_client import SeoulSubwayAPI
+from db_client import DbClient
 
 def job():
     print(f"\n[Batch Start] {time.strftime('%Y-%m-%d %H:%M:%S')}")
@@ -18,6 +18,7 @@ def job():
     
     for line in target_lines:
         print(f"Fetching {line}...", end=" ")
+        data = api.get_realtime_positions(line)
         data = api.get_realtime_positions(line)
         if data:
             count = db.insert_positions(data)
@@ -37,7 +38,15 @@ def main():
         print(f"[System Error] 설정 오류: {e}")
         return
 
+    # 테이블 초기화 (테이블이 없으면 생성)
+    try:
+        tmp_db = DbClient()
+        tmp_db.initialize_table()
+    except Exception as e:
+        print(f"[System Warning] 테이블 초기화 중 오류: {e}")
+
     # 초기 실행
+
     job()
     
     # 주기적 실행 설정
