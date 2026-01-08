@@ -55,11 +55,23 @@ class SubwayAnalyzer:
                 print(f"[{line}] 평균 배차 간격: {avg_interval}, 불규칙성(One Sigma): {std_interval}")
             else:
                 print(f"[{line}] 배차 간격 계산을 위한 데이터 부족")
+                
+        # Return summary stats for dashboard
+        # Group by line and calculate stats
+        if not df.empty:
+            df_sorted = df.sort_values(by=['station_name', 'direction_type', 'created_at'])
+            df_sorted['prev_arrival'] = df_sorted.groupby(['station_name', 'direction_type'])['created_at'].shift(1)
+            df_sorted['interval'] = (df_sorted['created_at'] - df_sorted['prev_arrival']).dt.total_seconds() / 60.0
+            
+            # Line-level stats
+            stats = df_sorted.groupby('line_name')['interval'].agg(['mean', 'std', 'count']).reset_index()
+            return stats
+        return pd.DataFrame()
 
     def analyze_delay_hotspots(self, df):
         """2. 지연 발생 구간 탐지 (체류 시간)"""
         print("\n=== [Analysis 2] 지연 발생 구간 (Hotspots) ===")
-        if df.empty: return
+        if df.empty: return pd.DataFrame()
 
         # train_number 별로 역에서의 체류 시간 추정
         # 같은 train_number가 같은 station_id에서 머무르는 시간 (count * batch_interval)
@@ -69,9 +81,10 @@ class SubwayAnalyzer:
         
         # 단순히 많이 관측된 곳 = 오래 머무른 곳으로 추정 (배치 주기가 1분이면 count 3 = 3분 체류)
         # 상위 5개 지연 의심 역 출력
-        top_delays = dwell_counts.sort_values(by='observed_count', ascending=False).head(5)
+        top_delays = dwell_counts.sort_values(by='observed_count', ascending=False).head(10)
         print("Top 5 체류 시간 긴 구간 (지연 의심):")
-        print(top_delays)
+        print(top_delays.head(5))
+        return top_delays
 
     def analyze_turnaround_efficiency(self, df):
         """3. 회차 효율성 분석"""
@@ -90,6 +103,10 @@ class SubwayAnalyzer:
         
         print(f"수집된 급행 위치 수: {len(express_trains)}, 일반 위치 수: {len(normal_trains)}")
         # 같은 역에 동시에 존재하거나 근접한 경우 탐지 로직 (복잡하므로 개수만 출력)
+        return {
+            "express_count": len(express_trains),
+            "normal_count": len(normal_trains)
+        }
 
     def run_all(self):
         df = self.fetch_data(limit=2000)
@@ -105,3 +122,9 @@ class SubwayAnalyzer:
 if __name__ == "__main__":
     analyzer = SubwayAnalyzer()
     analyzer.run_all()
+
+
+그러면 지하철 데이터의 실시간 분석을 볼 수 있는 
+로컬 웹 서버(일반적으로 http://127.0.0.1:8000)가 시작됩니다. 
+대시보드는 Subway_time 데이터베이스 테이블에 이미 있는 데이터에 의존하므로 
+데이터 수집기가 실행 중이거나 최근에 실행되었는지 확인하십시오.

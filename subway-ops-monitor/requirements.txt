@@ -4,3 +4,8 @@ python-dotenv
 schedule
 psycopg2-binary
 pandas
+shiny
+faicons
+plotly
+shinywidgets
+matplotlib
