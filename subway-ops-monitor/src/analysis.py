@@ -122,9 +122,3 @@ class SubwayAnalyzer:
 if __name__ == "__main__":
     analyzer = SubwayAnalyzer()
     analyzer.run_all()
-
-
-그러면 지하철 데이터의 실시간 분석을 볼 수 있는 
-로컬 웹 서버(일반적으로 http://127.0.0.1:8000)가 시작됩니다. 
-대시보드는 Subway_time 데이터베이스 테이블에 이미 있는 데이터에 의존하므로 
-데이터 수집기가 실행 중이거나 최근에 실행되었는지 확인하십시오.
