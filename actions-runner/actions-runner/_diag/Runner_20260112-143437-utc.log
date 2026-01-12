@@ -1,0 +1,99 @@
+[2026-01-12 14:34:37Z INFO HostContext] No proxy settings were found based on environmental variables (http_proxy/https_proxy/HTTP_PROXY/HTTPS_PROXY)
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.credentials'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'Runner': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.runner'
+[2026-01-12 14:34:37Z INFO Listener] Runner is built for Windows (X64) - win-x64.
+[2026-01-12 14:34:37Z INFO Listener] RuntimeInformation: Microsoft Windows 10.0.26200.
+[2026-01-12 14:34:37Z INFO Listener] Version: 2.330.0
+[2026-01-12 14:34:37Z INFO Listener] Commit: e2088f1fc730f9e857bec485223b090ef0e3cb87
+[2026-01-12 14:34:37Z INFO Listener] Culture: ko-KR
+[2026-01-12 14:34:37Z INFO Listener] UI Culture: ko-KR
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO Listener] Validating directory permissions for: 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO CommandLineParser] Parse
+[2026-01-12 14:34:37Z INFO CommandLineParser] Parsing 2 args
+[2026-01-12 14:34:37Z INFO CommandLineParser] parsing argument
+[2026-01-12 14:34:37Z INFO CommandLineParser] HasArgs: False
+[2026-01-12 14:34:37Z INFO CommandLineParser] Adding Command: remove
+[2026-01-12 14:34:37Z INFO CommandLineParser] parsing argument
+[2026-01-12 14:34:37Z INFO CommandLineParser] HasArgs: False
+[2026-01-12 14:34:37Z INFO CommandLineParser] Adding Command: BI4EXR2WZAITYYFIF7ZWKO3JMUKFO
+[2026-01-12 14:34:37Z INFO Listener] Arguments parsed
+[2026-01-12 14:34:37Z INFO CommandSettings] Command 'configure': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Command 'remove': 'True'
+[2026-01-12 14:34:37Z ERR  Terminal] WRITE ERROR: Unrecognized command-line input arguments for command remove: 'BI4EXR2WZAITYYFIF7ZWKO3JMUKFO'. For usage refer to: .\config.cmd --help or ./config.sh --help
+[2026-01-12 14:34:37Z INFO Runner] ExecuteCommand
+[2026-01-12 14:34:37Z INFO ConfigurationStore] currentAssemblyLocation: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin\Runner.Listener.dll
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] binPath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] RootFolder: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'Runner': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.runner'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] ConfigFilePath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.runner
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'MigratedRunner': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.runner_migrated'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] MigratedConfigFilePath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.runner_migrated
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'Credentials': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.credentials'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] CredFilePath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.credentials
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'MigratedCredentials': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.credentials_migrated'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] MigratedCredFilePath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.credentials_migrated
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Bin': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\bin'
+[2026-01-12 14:34:37Z INFO HostContext] Well known directory 'Root': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner'
+[2026-01-12 14:34:37Z INFO HostContext] Well known config file 'Service': 'C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.service'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] ServiceConfigFilePath: C:\Users\USER\Documents\웅진씽크빅kdt\DE과정\kdt-woongjin\actions-runner\actions-runner\.service
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'help': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'version': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'commit': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'check': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Command 'configure': 'False'
+[2026-01-12 14:34:37Z INFO CommandSettings] Command 'remove': 'True'
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'local': 'False'
+[2026-01-12 14:34:37Z INFO ConfigurationStore] IsServiceConfigured()
+[2026-01-12 14:34:37Z INFO ConfigurationStore] IsServiceConfigured: False
+[2026-01-12 14:34:37Z INFO ConfigurationStore] IsConfigured()
+[2026-01-12 14:34:37Z INFO ConfigurationStore] IsConfigured: True
+[2026-01-12 14:34:37Z INFO ConfigurationStore] HasCredentials()
+[2026-01-12 14:34:37Z INFO ConfigurationStore] stored True
+[2026-01-12 14:34:37Z INFO ConfigurationStore] Read setting file: 396 chars
+[2026-01-12 14:34:37Z INFO CommandSettings] Arg 'token': ''
+[2026-01-12 14:34:37Z INFO CommandSettings] Flag 'unattended': 'False'
+[2026-01-12 14:34:37Z INFO PromptManager] ReadValue
+[2026-01-12 14:34:37Z INFO Terminal] WRITE: Enter runner remove token: 
+[2026-01-12 14:34:37Z INFO Terminal] READ SECRET
+[2026-01-12 14:35:06Z INFO Terminal] Read value: '***'
+[2026-01-12 14:35:07Z ERR  Terminal] WRITE ERROR: Http response code: BadRequest from 'POST https://api.github.com/actions/runner-registration' (Request Id: C207:37E974:150E4DC:1DA6316:6965069A)
+[2026-01-12 14:35:07Z ERR  Terminal] WRITE ERROR: Bad Request
+[2026-01-12 14:35:07Z ERR  ConfigurationManager] Failed to get tenant credentials -- Attempt: 1
+[2026-01-12 14:35:07Z ERR  ConfigurationManager] System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.GetTenantCredential(String githubUrl, String githubToken, String runnerEvent)
+[2026-01-12 14:35:07Z INFO ConfigurationManager] Retrying in 1 seconds
+[2026-01-12 14:35:09Z ERR  Terminal] WRITE ERROR: Http response code: BadRequest from 'POST https://api.github.com/actions/runner-registration' (Request Id: C208:23A613:15EA00F:1E81990:6965069D)
+[2026-01-12 14:35:09Z ERR  Terminal] WRITE ERROR: Bad Request
+[2026-01-12 14:35:09Z ERR  ConfigurationManager] Failed to get tenant credentials -- Attempt: 2
+[2026-01-12 14:35:09Z ERR  ConfigurationManager] System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.GetTenantCredential(String githubUrl, String githubToken, String runnerEvent)
+[2026-01-12 14:35:09Z INFO ConfigurationManager] Retrying in 2 seconds
+[2026-01-12 14:35:11Z ERR  Terminal] WRITE ERROR: Http response code: BadRequest from 'POST https://api.github.com/actions/runner-registration' (Request Id: C209:3E786E:14F61CF:1D8DF8B:6965069F)
+[2026-01-12 14:35:11Z ERR  Terminal] WRITE ERROR: Bad Request
+[2026-01-12 14:35:11Z ERR  Terminal] WRITE ERROR: Failed: Removing runner from the server
+[2026-01-12 14:35:11Z ERR  Runner] System.Net.Http.HttpRequestException: Response status code does not indicate success: 400 (Bad Request).
+   at System.Net.Http.HttpResponseMessage.EnsureSuccessStatusCode()
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.GetTenantCredential(String githubUrl, String githubToken, String runnerEvent)
+   at GitHub.Runner.Listener.Configuration.ConfigurationManager.UnconfigureAsync(CommandSettings command)
+   at GitHub.Runner.Listener.Runner.ExecuteCommand(CommandSettings command)
+[2026-01-12 14:35:11Z ERR  Terminal] WRITE ERROR: Response status code does not indicate success: 400 (Bad Request).
+[2026-01-12 14:35:11Z INFO Listener] Runner execution has finished with return code 1

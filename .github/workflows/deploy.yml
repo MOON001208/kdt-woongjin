@@ -1,0 +1,18 @@
+name: Deploy DAGs to Local Airflow
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  deploy:
+    runs-on: [self-hosted,airflow-label]
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Copy DAGs to Docker Container
+        run: |
+          # ID 대신 NAMES를 사용합니다.
+          docker cp ./dags/. kdt-woongjin-airflow-scheduler-1:/opt/airflow/dags/
