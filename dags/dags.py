@@ -7,7 +7,7 @@
 
 GitHub Actions의 deploy.yml에서 이 규칙을 검증합니다.
 """
-
+ 
 from datetime import datetime, timedelta
 from airflow import DAG
 from airflow.operators.python import PythonOperator
