@@ -25,7 +25,7 @@ def get_db_connection():
     """
     hook = PostgresHook(postgres_conn_id='xoosl033110_supabase_conn')
     return hook.get_conn()
-
+ 
 def create_schema_and_table():
     """
     [STEP 3] Implements the Schema and Table creation SQL.
