@@ -212,13 +212,11 @@ with DAG(
     extract_task = PythonOperator(
         task_id='extract_youtube_data',
         python_callable=fetch_youtube_data,
-        provide_context=True
     )
 
     load_task = PythonOperator(
         task_id='load_to_supabase',
         python_callable=load_to_supabase,
-        provide_context=True
     )
 
     create_table_task >> extract_task >> load_task
