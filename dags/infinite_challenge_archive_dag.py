@@ -198,7 +198,7 @@ with DAG(
     'infinite_challenge_archive',
     default_args=default_args,
     description='Collects Infinite Challenge video data every 30 mins',
-    schedule_interval='*/30 * * * *',
+    schedule='*/30 * * * *',
     start_date=pendulum.datetime(2024, 1, 1, tz="Asia/Seoul"),
     catchup=False,
     tags=['infinite_challenge', 'youtube', 'archive'],
